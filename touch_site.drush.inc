@@ -24,7 +24,9 @@ function touch_site_drush_command() {
  * Callback function for touch-site command.
  */
 function drush_touch_site() {
+
   $drupal_major_version = drush_drupal_major_version();
+
   if ($drupal_major_version == 7) {
     $url = url(NULL, array('absolute' => TRUE));
     timer_start('ts');
